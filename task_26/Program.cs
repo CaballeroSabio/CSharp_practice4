@@ -19,7 +19,6 @@ int GetDigitCount(int num)
         num = num/10;
         result++; 
     }
-    
     return result;
 }
 
@@ -31,19 +30,19 @@ Console.WriteLine();
 Console.Write("Введите число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
-int GetNum (int number)
+int GetCountNum (int number)
 {
     int index = 1;
     int x = 0;
     while (index <= a)
     {
-        x = x+1;
+        x++;
         index = index*10;
     }
     return x;
 }
 
-int res = GetNum(a);
+int res = GetCountNum(a);
 Console.WriteLine($"Количество цифр в числе =  {res}");
 Console.WriteLine();
 
