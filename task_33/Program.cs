@@ -5,7 +5,7 @@
 */
 
 Console.Clear();
-Console.WriteLine("Введи число: ");
+Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
 int[] CreateArrayRnd(int size, int min, int max)
@@ -24,12 +24,9 @@ void PrintArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        if (i == 0)
-            Console.Write("[");
-        if (i < array.Length - 1)
-            Console.Write(array[i] + ",");
-        else
-            Console.Write(array[i] + "]");
+        if (i == 0) Console.Write("[");
+        if (i < array.Length - 1) Console.Write(array[i] + ",");
+        else Console.Write(array[i] + "]");
     }
 }
 
@@ -44,10 +41,10 @@ void GetNum(int[] array, int number)
             Res++;
 
     }
-    if (Res == 0) Console.WriteLine("no");
-    else Console.WriteLine("yes");
+    if (Res == 0) Console.WriteLine($"число {num} есть в массиве");
+    else Console.WriteLine($"число {num} есть в массиве");
 }
-int[] array = CreateArrayRndInd(12, 0, 15);
+int[] array = CreateArrayRnd(12, 0, 15);
 PrintArray(array);
 Console.WriteLine();
-Elem(array, num);
+GetNum(array, num);
