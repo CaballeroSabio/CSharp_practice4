@@ -18,6 +18,7 @@ int[] CreateArrayRndInt (int size, int min, int max)
     }
     return arr;
 }
+
 int GetAmount (int[] array)
 {
     int sum = 0;
@@ -28,6 +29,7 @@ int GetAmount (int[] array)
     }
     return sum;
 }
+
 void PrintArray (int[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -37,6 +39,7 @@ void PrintArray (int[] array)
         else Console.Write(array[i] + "]");
     }
 }
+
 int[] array = CreateArrayRndInt(123, 1, 124);
 PrintArray(array);
 int result = GetAmount(array);
@@ -44,3 +47,5 @@ Console.WriteLine();
 Console.WriteLine(result);
 
 
+double d = 4.23434;
+double res = Math.Round(d, 1);
