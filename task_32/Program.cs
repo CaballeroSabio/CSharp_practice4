@@ -3,6 +3,8 @@
 // соответствующие отрицательные, и наоборот.
 // [-4, -8, 8, 2] -> [4, 8, -8, -2]
 
+Console.Clear();
+
 int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];
@@ -18,9 +20,10 @@ void GetElem(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-    array[i] = array[i] * -1;
+        array[i] *= -1;
     }
 }
+
 void PrintArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -35,3 +38,4 @@ PrintArray(array);
 GetElem(array);
 Console.WriteLine();
 PrintArray(array);
+Console.WriteLine();
