@@ -28,7 +28,7 @@ int CountPosNum(int a, int b, int c, int d, int e)
     if (d > 0) d = 1; else d = 0;
     if (e > 0) e = 1; else e = 0;
     count = a + b + c + d + e;
-    return count; // CountPosNum(a,b,c,d,e);
+    return count;
 }
 
 int result = CountPosNum(num1, num2, num3, num4, num5);
